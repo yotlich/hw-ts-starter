@@ -2,5 +2,11 @@
   "name": "@yotlich/hw-ts-starter-frontend",
   "version": "0.1.0",
   "description": "",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "start": "vite preview",
+    "debug": "vite"
+  }
 }

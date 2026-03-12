@@ -1,0 +1,9 @@
+{
+  "name": "@yotlich/hw-ts-starter",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

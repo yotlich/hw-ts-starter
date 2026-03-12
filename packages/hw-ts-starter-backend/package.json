@@ -2,5 +2,12 @@
   "name": "@yotlich/hw-ts-starter-backend",
   "version": "0.1.0",
   "description": "",
-  "private": true
+  "private": true,
+  "type": "module",
+  "main": "dist/main",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "debug": "nest start --debug --watch"
+  }
 }

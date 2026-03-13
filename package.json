@@ -7,11 +7,15 @@
     "packages/*"
   ],
   "scripts": {
+    "debug:backend": "npm run -w packages/hw-ts-starter-backend debug",
+    "debug:frontend": "npm run -w packages/hw-ts-starter-frontend debug",
+    "debug": "concurrently \"npm run debug:backend\" \"npm run debug:frontend\"",
     "format": "npx prettier --write",
     "format:all": "npm run format .",
     "prepare": "npx simple-git-hooks"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "lint-staged": "^16.3.3",
     "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1"
